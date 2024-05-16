@@ -1,47 +1,104 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
-body{
+body {
     position: relative;
+    font-family: Arial, sans-serif;
 }
-.navbar{
+
+.obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3rem ;
-
-}
-nav{
-
-    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);;
+    padding: 1.3rem;
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-
 }
 
-#logo{
-    color: black;
-    font-size: 30px;
-    letter-spacing: 1px;
-    
+#logo {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
-#search-input{
-    max-width: '400px';
-    padding: 8px 16px;
-    border: 3px;
-    border-radius: 10px;
-    font-size: 15px;
-} 
-#search-button{
-    padding: 6px 25px;
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-   border: none;
-    font-size: 15px;
-     cursor: pointer;
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    width: 200px;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
     border-radius: 5px;
-    margin-left: 5px;
-    
+    font-size: 1rem;
+}
+
+#search-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+#block-container {
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.blog-card {
+    width: calc(33.33% - 40px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.blog-card:hover{
+    box-shadow: 5px 5px 10px black;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.blog-card h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.blog-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    .blog-card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-card {
+        width: calc(100% - 20px);
+    }
 }
