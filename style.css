@@ -7,6 +7,7 @@
 body {
     position: relative;
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);;
 }
 
 .obj-width {
@@ -73,7 +74,7 @@ body {
 }
 
 .card-image {
-    width: 100%;
+    width: 100px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
@@ -101,4 +102,8 @@ body {
     .blog-card {
         width: calc(100% - 20px);
     }
+}
+.blog-card p {
+    font-size: 15px;
+    padding-top: 10px;
 }
